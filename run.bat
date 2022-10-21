@@ -1,0 +1,1 @@
+venv\Scripts\python -m panel serve app.py --show --autoreload
