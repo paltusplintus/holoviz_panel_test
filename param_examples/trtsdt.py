@@ -40,5 +40,9 @@ subj1 = Subject(
     id='001-001',
     exposure=[Exposure(drug="DRUG1", date=x) for x in [3, 4, 5, 6]]
 )
+#subj1=eval("Subject(exposure=[Exposure(date=3, drug='DRUG1', name='Exposure00002'), Exposure(date=4, drug='DRUG1', name='Exposure00003'), Exposure(date=5, drug='DRUG1', name='Exposure00004'), Exposure(date=6, drug='DRUG1', name='Exposure00005')], id='001-001', name='Subject00006', trtsdt=Exposure(date=3, drug='DRUG1', name='Exposure00002'))")
 
 print(subj1.trtsdt.date)
+
+import pprint
+pprint.pprint(subj1)
