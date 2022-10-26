@@ -1,5 +1,5 @@
 import param
-
+import math
 
 class PythagoreanTheorem(param.Parameterized):
     """Model of the Pythagorean Theorem"""
@@ -21,7 +21,7 @@ class PythagoreanTheorem(param.Parameterized):
             self.c = math.sqrt(self.a ** 2 + self.b ** 2)
 
 
-def print_event(event):
-    print(event, end='\n\n')
-
-watcher = pythagoras.param.watch(print_event, "c")
+# def print_event(event):
+#     print(event, end='\n\n')
+#
+# watcher = pythagoras.param.watch(print_event, "c")
