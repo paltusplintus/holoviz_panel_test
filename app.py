@@ -18,6 +18,7 @@ df_pane.servable()
 def update_str(event):
     str_pane.object = str(event.obj.value)
     df_pane.object = df[df["C"].map(lambda x: x in event.obj.value)]
+    
 watcher = multi_choice.param.watch(update_str, "value")
 
 #run:
